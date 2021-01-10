@@ -1,6 +1,9 @@
 # Convolutional-Autoencoder-for-Image-transformation
 Can be used to build autoencoder models for image transformation like image colorization
 
+# Note:
+Feel free to tinker with the source file to work with images of different dimensions
+
 ## Sample code for training the model and inference
 ```python
 dataset = Dataset('SRC_IMAGES_PATH', 'TARGET_IMAGES_PATH')
