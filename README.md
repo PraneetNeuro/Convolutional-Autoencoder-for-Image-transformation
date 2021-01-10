@@ -2,7 +2,7 @@
 Can be used to build autoencoder models for image transformation like image colorization
 
 ## Sample code for training the model and inference
-'''python
+```python
 dataset = Dataset('SRC_IMAGES_PATH', 'TARGET_IMAGES_PATH')
 autoencoder = AutoEncoder(dataset, epochs=35)
 
@@ -24,4 +24,4 @@ def inference(images_path, save_path, ground_truth_path=None):
     else:
         output = np.array(autoencoder.model.predict([np.array(img)])[0])
         cv2.imwrite('{}/generated_{}.jpg'.format(save_path, os.path.splitext(img_n)[0]), output)
-'''
+```
