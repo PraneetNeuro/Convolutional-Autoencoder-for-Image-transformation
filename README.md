@@ -2,7 +2,7 @@
 Can be used to build autoencoder models for image transformation like image colorization
 
 ## Sample code for training the model and inference
-'''Python
+'''python
 dataset = Dataset('SRC_IMAGES_PATH', 'TARGET_IMAGES_PATH')
 autoencoder = AutoEncoder(dataset, epochs=35)
 
